@@ -1,0 +1,116 @@
+/* Reset some default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a global font-family */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header image */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style the main menu */
+#sidebar {
+    text-align: center;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    font-weight: bold;
+}
+}
+
+/* Stylish side navigation bar styles */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    padding-top: 20px;
+    transition: left 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Content area styles */
+.content {
+    margin-left: 0;
+    padding: 16px;
+    transition: margin-left 0.5s;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 16px;}
+}
+
+/* Toggle button styles */
+.toggle-btn {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+/* Toggle button animation */
+.toggle-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Show side navigation on hover */
+.sidenav:hover {
+    left: 0;
+}
+
+/* Hide side navigation on hover out */
+.sidenav:hover + .content {
+    margin-left: 0;
+}
+/* Style the content section */
+#content {
+    padding: 20px;
+    line-height: 2;
+} 
+
+/* Style the footer */
+footer {
+    background-color: #8CC0F8;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
